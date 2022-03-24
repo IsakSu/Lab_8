@@ -48,7 +48,9 @@ class LinkedQ:
         return counter
 
     def peek(self):
-        return self.__first.next.value
+        if (self.__first != None):
+            return self.__first.value
+        return None
 
 if __name__ == "__main__":
     #testprogram
